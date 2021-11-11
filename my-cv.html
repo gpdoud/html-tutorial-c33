@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link href="css/my-cv.css" rel="stylesheet">
+    <script lang="javascript">
+        const welcome = () => {
+            console.log("Welcome to my CV!");
+        }
+        const button_click = () => {
+            console.log("The button was clicked!");
+            let ctrl = document.getElementById("name");
+            let name = ctrl.value;
+            alert(`Hello to you ${name}`);
+        }
+    </script>
+</head>
+
+<body onload="welcome()">
+    <div>
+        <label>Enter your name: </label>
+        <input id="name" type="text">
+        <button onclick="button_click()">Click me!</button>
+    </div>
+    <div class="italic">
+        <span id="contact-name" class="impact bigger"> Greg Doud</span>
+        <span> | </span>
+        <span>4900 Parkway Dr</span>
+        <span> | </span>
+        <span>Mason, OH 45040</span>
+        <span> | </span>
+        <span>gdoud@maxtrain.com</span>
+        <span> | </span>
+        <span>513-322-8888</span>
+    </div>
+    <div>
+        <h3>Technology</h3>
+        <table class="code">
+            <tr>
+                <td>Git</td>
+                <td>GitHub</td>
+                <td>SQL</td>
+                <td id="tech-csharp">C#</td>
+            </tr>
+            <tr>
+                <td id="tech-ef" class="italic">EntityFrameworkCore</td>
+                <td>WebApi</td>
+                <td>LINQ</td>
+                <td class="redBold">HTML</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>JavaScript</td>
+                <td>BootStrap</td>
+                <td>jQuery</td>
+            </tr>
+            <tr>
+                <td id="tech-angular">Angular</td>
+                <td>TypeScript</td>
+                <td>Java</td>
+                <td class="redBold italic">Spring</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h3>Work History</h3>
+        <div>
+            <span class="bold">Sr. Instructor</span>
+            <span> | </span>
+            <span class="italic">MAX Technical Training</span>
+            <span> | </span>
+            <span class="">Mason, Oh</span>
+            <span> | </span>
+            <span class="bold italic">May 2017 - present</span>
+            <ul>
+                <li>Upgraded curriculum for boot camps</li>
+                <li>Created stand-along Angular class</li>
+            </ul>
+        </div>
+        <div>
+            <span class="bold">Bootcamp Instructor</span>
+            <span> | </span>
+            <span class="italic">The Iron Yard</span>
+            <span> | </span>
+            <span class="">Greenville, SC</span>
+            <span> | </span>
+            <span class="bold italic">July 2016 - May 2017</span>
+            <ul>
+                <li>Taught custom Java boot camp to SSA MD</li>
+                <li>Substituted for remaining .Net BC</li>
+            </ul>
+        </div>
+    </div>
+    <div class="red">
+        <h3>Education History</h3>
+        <ul>
+            <li>
+                <span class="bold">Mt. St. Mary of the West</span> | MA Cert LPM | 2016</li>
+            <li><span class="bold">University of Cincinnati</span> | BS IPS | 1985</li>
+        </ul>
+    </div>
+</body>
+
+</html>

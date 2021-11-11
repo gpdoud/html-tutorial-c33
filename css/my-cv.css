@@ -1,0 +1,32 @@
+body {
+    font: normal normal normal 14pt/20pt Verdana, Tahoma, sans-serif;
+}
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+tr, th, td {
+    border: 1px solid silver;
+}
+th, td {
+    width: 25%;
+    text-align: center;
+}
+.bold { 
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.bigger {
+    font-size: 1.25em;
+}
+.code {
+    font-family: 'Cascadia Code';
+}
+.impact {
+    font-family: Impact;
+}
+.red {
+    color: red;
+}

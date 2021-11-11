@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Detail</title>
+    <script src="js/user-utility.js"></script>
+    <script src="js/user-detail.js"></script>
+</head>
+<body onload="getUserByPk()">
+    <a href="user-list.html">Back to user list</a>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>
+                <input id="xid" type="text" size=10 disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>User name</td>
+            <td>
+                <input  id="xusername" type="text" size=30 disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>First name</td>
+            <td>
+                <input  id="xfirstname" type="text" size=20 disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>Last name</td>
+            <td>
+                <input id="xlastname" type="text" size=20 disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>
+                <input id="xphone" type="text" size=12 disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input id="xemail" type="text" size=40 disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>Reviewer</td>
+            <td>
+                <input id="xisreviewer" type="text" size=7 disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>Admin</td>
+            <td>
+                <input id="xisadmin" type="text" size=7 disabled>
+            </td>
+        </tr>
+    </table>
+    <button onclick="remove()">Delete</button>
+</body>
+</html>
